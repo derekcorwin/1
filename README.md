@@ -1,4 +1,7 @@
-powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+```
+$powerPlan = Get-WmiObject -Namespace root\cimv2\power -Class Win32_PowerPlan -Filter "ElementName = 'High Performance'"
+```
+$powerPlan.Activate()
 
 tzutil /s 'Central Standard Time'
 
