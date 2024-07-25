@@ -29,8 +29,9 @@ choco install 7zip notepadplusplus -y
 
 ```
 choco install googlechrome firefox /RemoveDistrubtionDir  microsoft-edge -y
-
 ```
+### Programs
+
 choco install adobereader -y
 choco install dropbox -y
 ```
