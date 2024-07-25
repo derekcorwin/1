@@ -1,8 +1,11 @@
-#H1 The basics
+# The basics
+
+## Config Changes
 
 ```
-$powerPlan = Get-WmiObject -Namespace root\cimv2\power -Class Win32_PowerPlan -Filter "ElementName = 'High Performance'"; $powerPlan.Activate()
+$powerPlan = Get-WmiObject -Namespace root\cimv2\power -Class Win32_PowerPlan -Filter "ElementName = 'High Performance'"; $powerPlan.Activate(); tzutil /s 'Central Standard Time'
 ```
+
 tzutil /s 'Central Standard Time'
 
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
